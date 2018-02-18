@@ -1,6 +1,6 @@
 {
   "name": "php7-and-whats-next",
-  "version": "0.1",
+  "version": "0.1.0",
   "description": "The Presentation about PHP 7 performance optimizations and possible features in the future",
   "subdomain": "revealjs",
   "main": "js/reveal.js",
