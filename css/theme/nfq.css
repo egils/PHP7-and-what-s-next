@@ -37,7 +37,7 @@ body {
 .reveal h5,
 .reveal h6 {
   margin: 0 0 20px 0;
-  color: #000000;
+  color: #ff6b00;
   font-family: "PF DinText Pro", Arial, sans-serif;
   font-weight: normal;
   line-height: 1.2;
@@ -261,7 +261,7 @@ body {
 
 .reveal .slides section {
   line-height: 1.5; }
-  .reveal .slides section.title h1, .reveal .slides section.title h2, .reveal .slides section.title h3, .reveal .slides section.title h4 {
+  .reveal .slides section h1, .reveal .slides section h2, .reveal .slides section h3, .reveal .slides section h4 {
     color: #ff6b00; }
 
 .reveal h1,
@@ -270,9 +270,6 @@ body {
 
 .reveal h1 {
   margin-bottom: 1em; }
-
-.reveal h2 {
-  color: inherit; }
 
 .reveal ul li {
   list-style-type: none; }
@@ -285,8 +282,7 @@ body {
     margin-right: .75em; }
 
 .reveal pre {
-  line-height: 1.5;
-  width: 100%; }
+  line-height: 1.5; }
   .reveal pre::before {
     background-color: #f2f2f2;
     border-top-left-radius: 2px;

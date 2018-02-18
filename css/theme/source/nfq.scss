@@ -11,7 +11,7 @@ $mainFont: 'PF DinText Pro', Arial;
 $mainFontSize: 1.5em;
 $mainColor: $black;
 $headingFont: 'PF DinText Pro', Arial, sans-serif;
-$headingColor: $black;
+$headingColor: $orange;
 $heading1Size: 3em;
 $heading2Size: 2.5em;
 $heading3Size: 2em;
@@ -33,15 +33,11 @@ body {
 
 .reveal {
   .slides {
-    //text-align: left;
-
     section {
       line-height: 1.5;
 
-      &.title {
-        h1, h2, h3, h4 {
-          color: $orange;
-        }
+      h1, h2, h3, h4 {
+        color: $orange;
       }
     }
   }
@@ -53,10 +49,6 @@ body {
 
   h1 {
     margin-bottom: 1em;
-  }
-
-  h2 {
-    color: inherit;
   }
 
   ul {
@@ -77,7 +69,6 @@ body {
 
   pre {
     line-height: 1.5;
-    width: 100%;
 
     &::before {
       background-color: #f2f2f2;
