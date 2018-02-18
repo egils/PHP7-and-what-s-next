@@ -34,3 +34,28 @@ public function doStuff() {
 c
 */
 ```
+
+--
+
+### Operator functions
+
+* PHP's built-in operators work functions!
+
+```php
+'+'($a, $b)     $a + $b	
+'-'($a, $b)     $a - $b	
+'*'($a, $b)     $a * $b	
+'/'($a, $b)     $a / $b	
+'==='($a, $b)   $a === $b	
+'!='($a, $b)    $a != $b	
+'<>'($a, $b)    $a <> $b	
+'!=='($a, $b)   $a !== $b	
+'<'($a, $b)     $a < $b	
+'>'($a, $b)     $a > $b	
+'<='($a, $b)    $a <= $b	
+'>='($a, $b)    $a >= $b	
+'<=>'($a, $b)   $a <=> $b
+
+// Adds the numbers in $terms together (equivalent to array_sum())
+$sum = array_reduce($terms, '+', 0);
+```
