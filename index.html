@@ -4,10 +4,10 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+		<title>PHP 7 & what's next</title>
 
 		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css">
+		<link rel="stylesheet" href="css/theme/nfq.css">
 
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
@@ -24,8 +24,18 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+				<section id="index" class="title"
+                    data-background-image="images/NFQ-logotype-300x300px.png"
+                    data-background-size="10%"
+                    data-background-color="#ffffff"
+                    data-background-repeat="no-repeat"
+                    data-background-position="top 5% right 5%"
+                    data-separator-vertical="^\n--\n$">
+                    <h1>PHP 7.2. Done.</h1>
+                    <h2>What's next?</h2>
+                </section>
+
+                <section id="whoami" data-markdown="sections/whoami.md"></section>
 			</div>
 		</div>
 
@@ -33,9 +43,6 @@
 		<script src="js/reveal.js"></script>
 
 		<script>
-			// More info about config & dependencies:
-			// - https://github.com/hakimel/reveal.js#configuration
-			// - https://github.com/hakimel/reveal.js#dependencies
 			Reveal.initialize({
 				dependencies: [
 					{ src: 'plugin/markdown/marked.js' },

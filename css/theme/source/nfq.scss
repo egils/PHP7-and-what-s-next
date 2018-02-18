@@ -1,0 +1,105 @@
+@import "../template/mixins";
+@import "../template/settings";
+
+// Override theme settings (see ../template/settings.scss)
+
+$orange: #ff6b00;
+$blueish: #e1f4fd;
+$black: #000000;
+
+$mainFont: 'PF DinText Pro', Arial;
+$mainFontSize: 1.5em;
+$mainColor: $black;
+$headingFont: 'PF DinText Pro', Arial, sans-serif;
+$headingColor: $black;
+$heading1Size: 3em;
+$heading2Size: 2.5em;
+$heading3Size: 2em;
+$heading4Size: 1.5em;
+$headingTextShadow: none;
+$headingTextTransform: none;
+$backgroundColor: $blueish;
+$linkColor: $orange;
+$linkColorHover: lighten( $linkColor, 20% );
+$selectionBackgroundColor: rgba(225, 244, 253, 0.99);
+
+
+@import "../template/theme";
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.reveal {
+  .slides {
+    //text-align: left;
+
+    section {
+      line-height: 1.5;
+
+      &.title {
+        h1, h2, h3, h4 {
+          color: $orange;
+        }
+      }
+    }
+  }
+
+  h1,
+  h2 {
+    text-transform: none;
+  }
+
+  h1 {
+    margin-bottom: 1em;
+  }
+
+  h2 {
+    color: inherit;
+  }
+
+  ul {
+
+    li {
+      list-style-type: none;
+
+      &::before {
+        content: "//";
+        color: mix($orange, $blueish, 40%);
+        font-weight: 300;
+        display: inline-block;
+        margin-left: -2em;
+        margin-right: .75em;
+      }
+    }
+  }
+
+  pre {
+    line-height: 1.5;
+    width: 100%;
+
+    &::before {
+      background-color: #f2f2f2;
+      border-top-left-radius: 2px;
+      border-top-right-radius: 2px;
+      color: #838383;
+      content: "•••";
+      display: block;
+      font-size: 1em;
+      line-height: 1.2;
+      text-indent: .5em;
+      width: 100%;
+    }
+
+  }
+
+  p {
+    font-weight: 300;
+    text-shadow: 1px 1px $blueish;
+  }
+
+  small code {
+    vertical-align: baseline;
+  }
+}
