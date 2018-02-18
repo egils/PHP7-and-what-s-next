@@ -1,23 +1,21 @@
 {
-  "name": "reveal.js",
-  "version": "3.6.0",
-  "description": "The HTML Presentation Framework",
-  "homepage": "http://revealjs.com",
+  "name": "php7-and-whats-next",
+  "version": "0.1",
+  "description": "The Presentation about PHP 7 performance optimizations and possible features in the future",
   "subdomain": "revealjs",
   "main": "js/reveal.js",
   "scripts": {
-    "test": "grunt test",
     "start": "grunt serve",
     "build": "grunt"
   },
   "author": {
-    "name": "Hakim El Hattab",
-    "email": "hakim.elhattab@gmail.com",
-    "web": "http://hakim.se"
+    "name": "Egidijus Lukauskas",
+    "email": "egils.ps@gmail.com",
+    "web": "http://egils.eu"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/hakimel/reveal.js.git"
+    "url": "git://github.com/egils/PHP7-and-what-s-next.git"
   },
   "engines": {
     "node": ">=4.0.0"
