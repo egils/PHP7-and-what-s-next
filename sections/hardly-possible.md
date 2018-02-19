@@ -34,8 +34,7 @@ interface I {
 }
  
 trait T implements I {
-    function foo() {
-    }
+    function foo() {}
 }
  
 class C {
@@ -102,26 +101,35 @@ try {
 class Person
 {
     friend HumanResourceReport;
- 
     protected $name; // <- note PROTECTED
- 
-    public function __construct($name) { $this->name = $name; }
-    public function makeReport() { return new HumanResourceReport($this); }
+    // ...
 }
-
 class HumanResourceReport
 {
-    private $person;
-    public function __construct(Person $person) { $this->person = $person; }
-    public function getFullName()
-    {
-        // HumanResourceReport have access to protected members of Person as it is explicitly listed as a friend
-        return $this->person->firstName;
+    private $personName;
+    public function __construct(Person $person) { 
+        $this->personName = $person->name; 
     }
 }
+```
 
-$report = new Person('Alice Wonderland')->makeReport();
-echo($report->getFullName()); // "Alice Wonderland"
+--
+
+### Lexical Scope for Anonymous Classes
+
+```php
+$glow = 5;
+$foo = new class use($glow) { };
+```
+Is functionally equivalent to:
+```php
+$glow = 5;
+$foo = new class($glow) {
+    private $glow;
+    public function __construct($glow) {
+        $this->glow = $glow;
+    }
+};
 ```
 
 

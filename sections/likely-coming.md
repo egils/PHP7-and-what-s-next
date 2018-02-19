@@ -5,11 +5,12 @@
 ### Null Coalescing Assignment Operator
 
 * ``??=`` to allow "if null" assignment
-* Voted ``yes`` but missed PHP 7.3 train
+* Voted ``yes``, implementation pending
 
 ```php
 $nullableVariable = $nullableVariable ?? 'default';
-// Instead of repeating variables with long names, the equal coalesce operator is used
+// Instead of repeating variables with long names, 
+// the equal coalesce operator is used
 $$nullableVariable ??= 'default';
 ```
 
@@ -47,15 +48,12 @@ c
 '*'($a, $b)     $a * $b	
 '/'($a, $b)     $a / $b	
 '==='($a, $b)   $a === $b	
-'!='($a, $b)    $a != $b	
 '<>'($a, $b)    $a <> $b	
-'!=='($a, $b)   $a !== $b	
 '<'($a, $b)     $a < $b	
-'>'($a, $b)     $a > $b	
 '<='($a, $b)    $a <= $b	
-'>='($a, $b)    $a >= $b	
 '<=>'($a, $b)   $a <=> $b
+...
 
-// Adds the numbers in $terms together (equivalent to array_sum())
+// Adds the numbers together (equivalent to array_sum())
 $sum = array_reduce($terms, '+', 0);
 ```

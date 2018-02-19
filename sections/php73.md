@@ -1,4 +1,4 @@
-## What to expect in PHP 7.3
+## What we _ARE_ going to see in PHP 7.3
 
 --
 
@@ -17,7 +17,7 @@ unset(
 ### JSON_THROW_ON_ERROR
 
 * New option flag value for ``json_decode()`` and ``json_encode()``
-* Will trow exception on error (no more random ``null``!)
+* Will trow ``\JsonException`` on error (no more random ``null``!)
 
 
 ```php
